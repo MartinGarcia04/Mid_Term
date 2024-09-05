@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: white;
+  }
+
+  .top-bar{
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+  }
+  .top-bar p{
+    position: relative;
+    top: 20px;
+    float: right;
+  }
+
+  .part-one{
+    position: relative;
+    top: 50px;
+    padding-bottom: 1000px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .part-one img{
+    width: 50%;
+    float:right;
+  }
+
+
+  .part-two{
+    background-color:#F6F6FE;
+    padding-top: 0px;
+    padding-bottom: 500px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .part-two img{
+    width: 50%;
+    float: right;
+  }
+
+  .part-tree{
+    background-color: #585989;
+    padding-top: 50px;
+    padding-bottom: 200px;
+  }
+
+  .part-two .icon{
+    width: 1%;
+    border-radius: 50px;
+    background-color: green;
+    float: right;
+    position: relative;
+    top: 5px;
+    right: 385px;
+
+  }
+
+  .hyper{
+    text-decoration: underline;
+    color: green;
+  }
+
+  .part-two .comment{
+    display: inline-block;
+    background-color: white; /* Color de fondo de la burbuja */
+    color: black; /* Color del texto */
+    padding: 50px 50px; /* Espacio interno alrededor del texto */
+    border-radius: 25px; /* Bordes redondeados para crear la burbuja */
+    max-width: 300px; /* Ancho máximo de la burbuja */
+    max-height: 150px;
+    font-size: 16px;
+  }
+
+  .comment img{
+    width: 30px;
+    height: 30px;
+    float: left;
+    border-radius: 50px;
+  }
