@@ -60,7 +60,7 @@ input[type="email"] {
 button {
     font-family:'Raleway',sans-serif ;
     padding: 12px 20px; 
-    background-color: #007bff; 
+    background-color: #0056b3; 
     color: white; 
     border: none; 
     border-radius: 5px;
@@ -68,17 +68,17 @@ button {
     font-size: 12px;
     width: 150px;
     font-weight: 700;
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.5);
 }
 
 button:hover {
-    background-color: #0056b3; 
+    background-color: #0c0479; 
 }
 
   .part-two{
     position: relative;
     background-color:#F6F6FE;
-    padding-top: 0px;
-    padding-bottom: 7%;
+    padding-bottom: 10%;
     padding-left: 150px;
     padding-right: 150px;
     
@@ -92,8 +92,12 @@ button:hover {
 
   .part-tree{
     background-color: #585989;
-    padding-top: 50px;
-    padding-bottom: 200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+    color: white;
+    display: flex;
   }
 
   .hyper{
@@ -127,14 +131,24 @@ button:hover {
     border-radius: 10px;
     max-width: 300px; 
     max-height: 700px;
-    font-size: 10px;
+    font-size: 11px;
+    display: flexbox;
   }
 
+  .part-two .comment p{
+    margin-bottom: 10px;
+  }
+  
+  .part-two .comment h4{
+    margin-top: 15px;
+  }
+  
   .comment img{
     width: 30px;
     height: 30px;
     float: left;
     border-radius: 50px;
+    
   }
 
   .comment .leyend{
@@ -144,4 +158,53 @@ button:hover {
 
   .bottom{
     background-color: #070439;
+    color: white;
   }
+
+  .form-section {
+    flex: 1 1 50%; /* Ocupa la mitad izquierda del contenedor */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column; /* Organiza input y button verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+}
+
+.input2 {
+    padding: 10px;
+    margin-bottom: 10px; /* Espacio entre el input y el botón */
+    width: 100%; /* Ajusta el input al ancho del contenedor */
+    max-width: 400px;
+}
+
+.btn2 {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto; /* Ajusta el botón al ancho del contenedor */
+}
+
+.text-section {
+  flex: 038; /* Ocupa la mitad derecha del contenedor */
+  display: flex;
+  justify-content: center; /* Centra el texto horizontalmente */
+  align-items: center; /* Centra el texto verticalmente */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left; /* Centra el texto dentro del contenedor */
+}
+
+input[type="email2"] {
+  width: 100vh;
+}
