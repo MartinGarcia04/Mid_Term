@@ -2,6 +2,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+  }
+
+  h1,h2,h3,h4{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    margin-bottom: 5px;
   }
 
   body{
@@ -10,8 +18,8 @@
 
   .top-bar{
     padding-top: 20px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-bottom: 10px;
   }
   .top-bar p{
@@ -23,9 +31,9 @@
   .part-one{
     position: relative;
     top: 50px;
-    padding-bottom: 500px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-bottom: 600px;
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
   .part-one img{
@@ -33,18 +41,53 @@
     float:right;
   }
 
+  form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="email"] {
+    width: 100%; 
+    padding: 12px 15px; 
+    border: 1px solid black; 
+    border-radius: 5px;
+    margin-right: 20px; 
+    font-size: 12px; 
+    max-width: 350px;
+}
+
+
+button {
+    font-family:'Raleway',sans-serif ;
+    padding: 12px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 12px;
+    width: 150px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
 
   .part-two{
+    position: relative;
     background-color:#F6F6FE;
     padding-top: 0px;
-    padding-bottom: 500px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-bottom: 7%;
+    padding-left: 150px;
+    padding-right: 150px;
+    
   }
 
   .part-two img{
     width: 50%;
     float: right;
+    margin: 5px;
   }
 
   .part-tree{
@@ -53,31 +96,38 @@
     padding-bottom: 200px;
   }
 
-  .part-two .icon{
-    width: 1%;
+  .hyper{
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid rgb(0, 128, 117);
+    padding-bottom: 2px;
+  }
+
+
+  .hyper .icon{
+    width: 15px;
     border-radius: 50px;
-    background-color: green;
-    float: right;
-    position: relative;
+    background-color: rgb(0, 128, 117);
     top: 5px;
-    right: 300px;
 
   }
 
-  .hyper{
-    text-decoration: underline;
-    color: green;
+  .hyper a{
+    text-decoration: none;
+    color: rgb(0, 128, 117);
+    display: inline-block;
   }
 
   .part-two .comment{
-    display: inline-block;
-    background-color: white; /* Color de fondo de la burbuja */
-    color: black; /* Color del texto */
-    padding: 50px 50px; /* Espacio interno alrededor del texto */
-    border-radius: 25px; /* Bordes redondeados para crear la burbuja */
-    max-width: 300px; /* Ancho máximo de la burbuja */
-    max-height: 150px;
-    font-size: 16px;
+    background-color: white;
+    color: black; 
+    height: 150px;
+    padding: 30px 30px;
+    border-radius: 10px;
+    max-width: 300px; 
+    max-height: 700px;
+    font-size: 10px;
   }
 
   .comment img{
@@ -85,4 +135,13 @@
     height: 30px;
     float: left;
     border-radius: 50px;
+  }
+
+  .comment .leyend{
+    font-size: 8px;
+  }
+
+
+  .bottom{
+    background-color: #070439;
   }
