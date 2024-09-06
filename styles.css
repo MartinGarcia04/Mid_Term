@@ -4,6 +4,12 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     font-weight:400;
+    overflow-x: hidden;
+  }
+
+  .logo-file{
+    width: 16%;
+    margin-bottom: 20px;
   }
 
   h1,h2,h3,h4{
@@ -31,7 +37,7 @@
   .part-one{
     position: relative;
     top: 50px;
-    padding-bottom: 600px;
+    padding-bottom: 500px;
     padding-left: 150px;
     padding-right: 150px;
   }
@@ -143,6 +149,10 @@ button:hover {
     margin-top: 15px;
   }
   
+  .comment{
+    overflow: hidden;
+  }
+
   .comment img{
     width: 30px;
     height: 30px;
@@ -157,54 +167,90 @@ button:hover {
 
 
   .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-right: 150px;
+    padding-left: 150px;
     background-color: #070439;
     color: white;
   }
 
+  input[type="email2"] {
+    width: 500px;
+    border: 1px solid gray;
+  }
+
+  div:empty{
+    white-space: normal;
+  }
   .form-section {
-    flex: 1 1 50%; /* Ocupa la mitad izquierda del contenedor */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-    padding: 20px;
+    justify-content: center; 
+    align-items: center; 
     box-sizing: border-box;
 }
 
 .form-section form {
     display: flex;
-    flex-direction: column; /* Organiza input y button verticalmente */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column; 
+    align-items: flex-start; 
 }
 
 .input2 {
     padding: 10px;
-    margin-bottom: 10px; /* Espacio entre el input y el botón */
-    width: 100%; /* Ajusta el input al ancho del contenedor */
-    max-width: 400px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 10px;
 }
 
 .btn2 {
-    padding: 10px 20px;
     background-color: #3498db;
     color: #fff;
     border: none;
     border-radius: 0px;
     cursor: pointer;
-    transition: background-color 0.3s;
-    width: auto; /* Ajusta el botón al ancho del contenedor */
+    width: auto; 
+    box-shadow: none;
 }
 
 .text-section {
-  flex: 038; /* Ocupa la mitad derecha del contenedor */
+  flex: 0.8; 
   display: flex;
-  justify-content: center; /* Centra el texto horizontalmente */
-  align-items: center; /* Centra el texto verticalmente */
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   box-sizing: border-box;
-  text-align: left; /* Centra el texto dentro del contenedor */
+  text-align: left;
 }
 
-input[type="email2"] {
-  width: 100vh;
+
+
+.social{
+  width: 10%;
+}
+
+.cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+
+}
+.mid, .right {
+  display: flex;
+  flex-direction: column; /* Para apilar los elementos dentro de estas divs */
+}
+
+.mid p, .right p {
+  margin: 10px 0; /* Espaciado entre los párrafos */
+}
+
+.bottom .logo-file{
+  position: relative;
+  right: calc(100%/2.35);
 }
